@@ -1,0 +1,90 @@
+<html>
+<head>
+	 <meta name="viewport" content="width=640">
+	<title>Read with HNMobile</title>
+	<style type="text/css">
+		body { font:normal 13px/1.5em "Helvetica Neue", Helvetica, sans-serif;color:#585858; }
+
+		header h1 { font:bold 28px/1.2em "Helvetica Neue", Helvetica, sans-serif;color:#252525; }
+
+		p { font:normal 15px/1.5em "Helvetica Neue", Helvetica, sans-serif;color:#585858; } 
+
+		h1, h2, h3, h4, h5, h6 { color:#585858; font-family: "Helvetica Neue", Helvetica, sans-serif, arial, sans-serif;  }
+
+		h2 { font:bold 24px/1em "Helvetica Neue", Helvetica, sans-serif; }
+
+		h3 { font:bold 20px/1em "Helvetica Neue", Helvetica, sans-serif; }
+
+		a { color: #CC1600; }
+		a:hover { color: #46B1E1; }
+
+		body {
+			/*font: 14px/16px 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+			width: 640px;
+			margin: 0 auto;
+			padding: 2em 1em;
+		}
+
+		header {
+			margin: 32px 0;
+		}
+
+		.bookmarklet {
+			font: 11px/14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			text-decoration: none;
+			background: #dadada;
+			padding: 3px 7px;
+			border-radius: 5px;
+			color: black !important;
+		}
+
+		.code {
+			font: 11px/14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			width: 100%;
+			padding: 0.5em;
+			height: 4em;
+			border: 1px solid #B3B3B3;
+			border-radius: 5px;
+			background: #FEFEFE;
+			box-shadow: inset 1px 1px 4px #DADADA;	
+			outline: none;		
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<h1>HNMobile Bookmarklet</h1>
+	</header>
+	<p><a href="https://github.com/cheeaun">Lim Chee Aun</a> built a great app to view <a href="http://news.ycombinator.com">HackerNews</a> on mobile devices. But sometimes you find a link to HN on some blog and there where no easy way to open that page in HNMobile until now :) Meet HNMobile Bookmarklet. This bookmarklet opens current HN page in HNMobile.</p>
+
+	<h3>The Bookemarklet:</h3>
+	<a class="bookmarklet" href="javascript:(function(){ var id = /\?id=(\d+)/.exec(window.location+'')[1]; window.location = 'http://cheeaun.github.com/hnmobile/#/item/'+id; }())">Read with HNMobile</a>
+
+	<h2>Installin on iOS devices:</h2>
+
+	<ol>
+		<li>
+			<p>Create a new bookmark: Tap the "share" button and choose "Add Bookmark".</p>
+		</li>
+		<li>
+			<p>Copy the javascript code below.</p>
+		</li>
+		<li>
+			<p>Edit the new bookmark (to turn it into a bookmarklet): Open your bookmarks, scroll to the one you've just created, tap the "Edit" button and select it. Delete the URL contents and paste the code (which you copied in Step 2). Hit 
+			"Done" when finished.</p>
+		</li>
+	</ol>
+
+	<h2>Bookmarklet code</h2>
+
+	<textarea class="code">javascript:(function(){ var id = /\?id=(\d+)/.exec(window.location+'')[1]; window.location = 'http://cheeaun.github.com/hnmobile/#/item/'+id; }())</textarea>
+
+	<hr>
+
+</body>
+</html>
+
+
+
+
