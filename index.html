@@ -53,6 +53,16 @@
 			box-shadow: inset 1px 1px 4px #DADADA;	
 			outline: none;		
 		}
+
+		hr {
+			margin: 2em 0;
+		}
+
+		.buttons > div {
+			display: inline-block;
+			margin-left: 1em;
+		}
+
 	</style>
 
 </head>
@@ -107,13 +117,20 @@
 	<textarea class="code">javascript:(function(){ var id = /\?id=(\d+)/.exec(window.location+'')[1]; window.location = 'http://cheeaun.github.com/hnmobile/#/item/'+id; }())</textarea>
 
 	<hr>
-	<g:plusone size="medium"></g:plusone>
-	<div class="fb-like" data-href="http://neocoder.github.com/hnmbookmarklet/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
-	<a href="https://twitter.com/share" class="twitter-share-button" data-text="HackerNews mobile bookmarklet" data-via="neocoder">Tweet</a>
+
+	<div class="buttons">
+		<div>
+			<div class="fb-like" data-href="http://neocoder.github.com/hnmbookmarklet/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>			
+		</div>
+		<div>
+			<g:plusone size="medium"></g:plusone>
+		</div>
+		<div>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="HackerNews mobile bookmarklet" data-via="neocoder">Tweet</a>			
+		</div>
+	</div>
 
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
-
-
 </body>
 </html>
 
